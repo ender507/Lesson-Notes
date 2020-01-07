@@ -1,4 +1,28 @@
 # 概统笔记
+## 概率部分重要公式
+- P(A|B)=P(AB)/P(B)
+- 泊松分布X~π(λ):$P(X=k)=\frac{λ^ke^{-λ}}{k!}$
+  - E(x)=D(x)=λ
+- 均匀分布X~U(a,b):$f(x)=\frac{1}{a-b},a<x<b$
+  - E(x)=(b+a)/2
+  - D(x)=(b-a)<sup>2</sup>/12
+- 指数分布$f(x)=\frac{1}{θ}e^{-x/θ},x>0$
+  - E(x)=θ
+  - D(x)=θ<sup>2</sup>
+- $f_{X|Y}(x|y)=\frac{f(x,y)}{f_Y(y)}$
+- 相互独立的A，B(或者x,y)有：
+  - $P(AB)=P(A)P(B)$
+  - $F(x,y)=F_X(x)F_Y(y)$
+  - $f(x,y)=f_X(x)f_Y(y)$
+  - $E(XY)=E(X)E(Y)$
+  - $D(X+Y)=D(X)+D(Y)$
+- 切比雪夫不等式：$P\{|X-μ|\geq\epsilon\}\leq\frac{\sigma^2}{\epsilon^2}$  
+- D(X+Y)=D(X)+D(Y)+2Cov(X,Y)
+- Cov(X,Y)=E(XY)-E(X)-E(Y)
+- $\rho_{xy}=\frac{Cov(x,y)}{\sqrt{D(X)}\sqrt{D(Y)}}$,为0表示X和Y不相关。表示了X和Y的线性相关关系。结果为1时，X和Y有直接的线性关系。
+- 中心极限定理：$\frac{\sum_{k=1}^nX_k-n\mu}{\sqrt{n}\sigma}\sim N(0,1)$
+----------------------
+--------------------
 ## 样本及抽样分布
 ### 随机样本和图
 箱线图的排除范围：记Q<sub>1</sub>为第一四分位数,Q<sub>3</sub>为第三四分位数，Q3-Q1记为IQR，则异常值为：小于Q1-1.5\*IQR或大于Q3+1.5\*IQR的值。
@@ -18,6 +42,7 @@
   - $\frac{\overline{X}-μ}{S/\sqrt{n}}\sim t(n-1)$
   - $\frac{S^2_1/S^2_2}{\sigma^2_1/\sigma^2_2}\sim F(n_1-1,n_2-1)$
   - $\sigma_1^2=\sigma_2^2=\sigma$时，有：$\frac{(\overline{X}-\overline{Y})-(μ_1-μ_2)}{S_w\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}\sim t(n_1+n_2-2)$，其中$S^2_w=\frac{(n_1-1)S_1^2+(n_2-1)S^2_2}{n_1+n_2-2}$
+
 ----------------------------------
 --------------------------------
 
@@ -43,7 +68,7 @@
 - 相和性：对任意ε>0都有$^{lim}_{n->\inf}P(|\hat{θ}-θ|<ε)=0)$则θ帽是θ的相合估计量。
 -----------------------------------
 #### 区间估计
-![参数估计](https://github.com/ender507/Lesson-Notes/blob/master/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1.jpg)
+![参数估计](https://github.com/ender507/Lesson-Notes/blob/master/0%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1.jpg)
 
 其中，分布$Z_\alpha$表示使得$Φ(x)=1-\alpha$的x值
 
