@@ -1,7 +1,23 @@
 # 概统笔记
 ## 样本及抽样分布
-
-
+### 随机样本和图
+箱线图的排除范围：记Q<sub>1</sub>为第一四分位数,Q<sub>3</sub>为第三四分位数，Q3-Q1记为IQR，则异常值为：小于Q1-1.5\*IQR或大于Q3+1.5\*IQR的值。
+### 抽样分布
+- 经验分布函数：$F_n(x)=S(x)/n$，其中n表示样本数，S(x)表示在某个范围内的样本个数。易知，$0\leq F_n(x)\leq1$。
+- 卡方分布:$\chi^2=X_1^2+X_2^2+...+X_n^2$,记为$\chi^2\sim\chi^2(n)$
+  - $\chi^2_1\sim\chi^2(n_1)$且$\chi^2_2\sim\chi^2(n_2)$，则$\chi^2_1+\chi^2_2 \sim \chi^2(n_1+n_2)$
+  - $E(\chi^2)=n,D(\chi^2)=2n$
+- t分布：$X\sim N(0,1),Y\sim\chi^2(n),t=\frac{X}{\sqrt{Y/n}}$则t~t(n)
+- F分布：$U\sim\chi^2(n_1),V\sim\chi^2(n_2),F=\frac{U/n_1}{V/n_2}$，则$F\sim F(n_1,n_2)$
+  - $F_\alpha(n_1,n_2)$使得$F>F_\alpha(n_1,n_2)$概率为α
+  - $F_{1-\alpha}(n_1,n_2)=\frac{1}{F_\alpha(n_2,n_1)}$
+- 对于来自正态总体$N(μ,\sigma^2/n)$的样本$X_1,X_2,...X_n$有:
+  - $\overline{X}\sim N(μ,\sigma^2/n)$
+  - $\frac{(n-1)S^2}{\sigma^2}\sim\chi^2(n-1)$
+  - $\overline{X}、S^2$相互独立
+  - $\frac{\overline{X}-μ}{S/\sqrt{n}}\sim t(n-1)$
+  - $\frac{S^2_1/S^2_2}{\sigma^2_1/\sigma^2_2}\sim F(n_1-1,n_2-1)$
+  - $\sigma_1^2=\sigma_2^2=\sigma$时，有：$\frac{(\overline{X}-\overline{Y})-(μ_1-μ_2)}{S_w\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}\sim t(n_1+n_2-2)$，其中$S^2_w=\frac{(n_1-1)S_1^2+(n_2-1)S^2_2}{n_1+n_2-2}$
 ----------------------------------
 --------------------------------
 
