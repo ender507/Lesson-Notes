@@ -35,7 +35,7 @@
 - F分布：$U\sim\chi^2(n_1),V\sim\chi^2(n_2),F=\frac{U/n_1}{V/n_2}$，则$F\sim F(n_1,n_2)$
   - $F_\alpha(n_1,n_2)$使得$F>F_\alpha(n_1,n_2)$概率为α
   - $F_{1-\alpha}(n_1,n_2)=\frac{1}{F_\alpha(n_2,n_1)}$
-- 对于来自正态总体$N(μ,\sigma^2/n)$的样本$X_1,X_2,...X_n$有:
+- 对于来自正态总体$N(μ,\sigma^2)$的样本$X_1,X_2,...X_n$有:
   - $\overline{X}\sim N(μ,\sigma^2/n)$
   - $\frac{(n-1)S^2}{\sigma^2}\sim\chi^2(n-1)$
   - $\overline{X}、S^2$相互独立
