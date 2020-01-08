@@ -9,6 +9,9 @@
 - 指数分布$f(x)=\frac{1}{θ}e^{-x/θ},x>0$
   - E(x)=θ
   - D(x)=θ<sup>2</sup>
+- 卡方分布$\chi^2\sim\chi^2(n)$
+  - $E(\chi^2)=n$
+  - $D(\chi^2)=2n$
 - $f_{X|Y}(x|y)=\frac{f(x,y)}{f_Y(y)}$
 - 相互独立的A，B(或者x,y)有：
   - $P(AB)=P(A)P(B)$
@@ -68,7 +71,7 @@
 - 相和性：对任意ε>0都有$^{lim}_{n->\inf}P(|\hat{θ}-θ|<ε)=0)$则θ帽是θ的相合估计量。
 -----------------------------------
 #### 区间估计
-![参数估计](https://github.com/ender507/Lesson-Notes/blob/master/0%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1.jpg)
+![参数估计](https://github.com/ender507/Lesson-Notes/blob/master/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1.jpg)
 
 其中，分布$Z_\alpha$表示使得$Φ(x)=1-\alpha$的x值
 
